@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* ANIMATIONS */
+
+@keyframes scary_hover_an {
+  from {
+    color: red;
+    text-shadow: 1px 1px 0.5rem black;
+  }
+
+  to {
+    color: black;
+    text-shadow: 1px 1px 0.5rem red;
+  }
+}
+
+body {
+  background-image: url("./halloween\ img\ 2.jpg");
+  background-repeat: no-repeat;
+}
+
+#title {
+  color: white;
+  text-shadow: 1px 1px 0.5rem black;
+  text-align: center;
+  margin-top: 30%;
+  font-size: 4.7rem;
+  /* ANIMATION */
+  animation-name: scary_hover_an;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-direction: alternate;
+}
+
+.countdown-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown-container > p {
+  color: white;
+  margin: 0.1rem 0.4rem 0.1rem 0.4rem;
+  font-size: 2.6rem;
+  text-shadow: 1px 1px 3px black;
+}
