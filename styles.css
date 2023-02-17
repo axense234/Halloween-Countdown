@@ -3,6 +3,7 @@
   padding: 0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
 }
 
 /* ANIMATIONS */
@@ -19,53 +20,66 @@
   }
 }
 
-body {
-  background-image: url("./halloween\ img\ 2.jpg");
-  background-repeat: no-repeat;
+body,
+html {
+  width: 100%;
+  height: 100%;
 }
 
-#title {
-  color: white;
-  text-shadow: 1px 1px 0.5rem black;
-  text-align: center;
-  margin-top: 20rem;
-  font-size: 4.7rem;
-  /* ANIMATION */
-  animation-name: scary_hover_an;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-duration: 1s;
-  animation-delay: 0.3s;
-  animation-direction: alternate;
-  transition: font-size 1s;
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-image: url("./halloween.jpg");
+  border: 1px solid black;
 }
 
 .countdown-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 0, 100, 0.8);
+  margin-bottom: auto;
+  margin-top: 15rem;
+}
+
+h1 {
+  color: white;
+  font-size: 4.7rem;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  animation: scary_hover_an 1s alternate 0.2s infinite;
+}
+
+.countdown-container__timer {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.countdown-container > p {
-  color: white;
-  margin: 0.1rem 0.4rem 0.1rem 0.4rem;
+.countdown-container__timer > p {
+  margin: 0.2rem 0.5rem;
   font-size: 2.6rem;
-  text-shadow: 1px 1px 3px black;
-  transition: font-size 1s;
+  transition: font-size 0.1s ease-in;
 }
 
 @media screen and (max-width: 900px) {
-  #title {
+  h1 {
     font-size: 3rem;
   }
-  .countdown-container > p {
+  .countdown-container__timer > p {
     font-size: 1.6rem;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .countdown-container > p {
+  .countdown-container__timer > p {
     font-size: 1.3rem;
   }
 }
