@@ -28,4 +28,4 @@ const Countdown = (date) => {
   }, 1000);
 };
 
-Countdown("Oct 31, 2023 24:00:00");
+Countdown("Oct 31, 2024 24:00:00");

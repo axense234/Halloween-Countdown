@@ -28,6 +28,8 @@ git clone https://github.com/axense234/Halloween-Countdown.git
 
 ## **Version History**
 
+- 0.3
+  - Analyzed the code to gather to-do tasks.
 - 0.2
   - Made the website look better,also improved the JS logic
   - See [commit change](https://github.com/axense234/Halloween-Countdown/commits/master) or See [release history](https://github.com/axense234/Halloween-Countdown/releases)
