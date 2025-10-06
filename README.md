@@ -1,10 +1,10 @@
 # **Halloween Countdown**
 
-A simple HTML-CSS-JS project for playing around with dates/countdown functionality.
+A simple HTML-CSS-JS project for playing around with dates / countdown functionality.
 
 ## **Description**
 
-A simple HTML-CSS-JS project for playing around with dates/countdown functionality.This project is themed around Halloween,displaying how many days,hours,minutes and seconds there are left untill Halloween.
+A simple HTML-CSS-JS project for playing around with dates / countdown functionality. This project is themed around Halloween, displaying how many days, hours, minutes and seconds there are left until Halloween.
 
 ## **Getting Started**
 
